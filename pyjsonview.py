@@ -9,4 +9,4 @@ Created on Sun Oct 25 00:27:39 2020
 
 import urllib
 import json 
-
+import numpy
