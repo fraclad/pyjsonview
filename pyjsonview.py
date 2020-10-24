@@ -1,12 +1,13 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Oct 25 00:27:39 2020
-
-@author: rahmatashari
-"""
-
-
-import urllib
 import json 
-import numpy
+
+with open('example_1.json', 'r') as file:
+    data = json.load(file)
+
+def json_glance(file):
+    print('master')
+    for i in range(len(file)):
+        if type(list(file.keys())[i]) != 'dict':
+            print(' |--- ', list(file.keys())[i])
+            
+json_glance(data)
+
